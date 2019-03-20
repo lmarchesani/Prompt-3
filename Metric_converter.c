@@ -5,6 +5,17 @@
 
 int main()
 {
+    //declaration of keys and key test
+    char keyTest[5]={0};
+    printf("Please enter the Password\n");
+    scanf("%s",keyTest);
+    if (strcasecmp(keyTest,"IDF")!=0)
+    {
+        printf("Wrong key!");
+        return 0;
+    }
+
+    system ("cls");
     //multiples to do math with
     //distance
     float inches_to_meters = 0.0254;
